@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.addEventListener('click', handleClicks)
   
-  let tableRow
+  let tableRow // tableRow collects the dog row ID on line 67 and inserts the updated JSON on line 91
 
   fetchDogs()
 
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // --- HANDLE EDIT AND DELETE BUTTONS --- //
 
   function handleClicks(e) {
-    if (e.target.innerText === 'Edit') {
+    if (e.target.innerText === 'Edit') {   // Populates the form fields with the data to be edited
       form.name.value = e.target.parentElement.parentElement.querySelector('#name').innerText
       form.breed.value = e.target.parentElement.parentElement.querySelector('#breed').innerText
       form.sex.value = e.target.parentElement.parentElement.querySelector('#sex').innerText
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
       hidden.value = e.target.parentElement.id
       form.appendChild(hidden)
 
-      dogRow = e.target.parentElement
+      dogRow = e.target.parentElement // dogRow collects the row ID here
     }
     
     if (e.target.name === 'submit') {
