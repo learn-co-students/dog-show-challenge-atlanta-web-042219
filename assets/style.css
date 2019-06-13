@@ -1,3 +1,7 @@
+td button {
+  background-color: rgba(0,0,0,0);
+}
+
 .main {
   height: 100vh;
   font-family: 'Open Sans', sans-serif;
@@ -10,7 +14,7 @@
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'comic sans', cursive;
   margin-bottom: 0px;
 }
 
