@@ -39,9 +39,9 @@ function displayDog(dog) {
         const inputSex = document.getElementById("inputSex")
         console.log(inputName)
 
-        inputName.placeholder = dog.name
-        inputBreed.placeholder = dog.breed
-        inputSex.placeholder = dog.sex
+        inputName.value = dog.name
+        inputBreed.value = dog.breed
+        inputSex.value = dog.sex
             const form = document.getElementById("dog-form")
             form.addEventListener("submit", (e) => {
                 fetch(`http://localhost:3000/dogs/${dog.id}`, {
